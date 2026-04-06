@@ -3,7 +3,7 @@
 document.getElementById("cashout-btn").addEventListener("click", function() {
 //taking the cashout number value
 
-    const cashoutNumber = getValueFromnput("cashout-number");
+    const cashoutNumber = getValueFromInput("cashout-number");
     console.log(cashoutNumber);
     if(cashoutNumber.length !== 11) {
         alert("Please enter a valid phone number");
@@ -13,7 +13,7 @@ document.getElementById("cashout-btn").addEventListener("click", function() {
     //taking the cashout amount value
 
 
-    const cashoutAmount = getValueFromnput("cashout-amount");
+    const cashoutAmount = getValueFromInput("cashout-amount");
     
 
     //TAKING THE BALANCE AMOUNT
@@ -33,7 +33,7 @@ document.getElementById("cashout-btn").addEventListener("click", function() {
 
 
     //taking the cashout pin value
-    const Pin = getValueFromnput("cashout-pin");
+    const Pin = getValueFromInput("cashout-pin");
     if(Pin === "1234") {
         alert("Cashout Done");
           console.log(newBlance);
