@@ -76,42 +76,42 @@
       </p>
 
       <div class="button grid grid-cols-3 gap-3">
-        <button
+        <button onclick="show('add-money')"
           class="btn flex flex-col h-full items-center py-4 rounded-3xl btn-soft"
         >
           <img src="assets/opt-1.png" alt="" />
           <p>Add Money</p>
         </button>
 
-        <button
+        <button onclick="show('cashout')"
           class="btn flex flex-col h-full items-center py-4 rounded-3xl btn-soft"
         >
           <img src="assets/opt-2.png" alt="" />
           <p>Cashout</p>
         </button>
 
-        <button
+        <button onclick="show('send-money')"
           class="btn flex flex-col h-full items-center py-4 rounded-3xl btn-soft"
         >
           <img src="assets/opt-3.png" alt="" />
           <p>Send Money</p>
         </button>
 
-        <button
+        <button onclick="show('get-bonus')"
           class="btn flex flex-col h-full items-center py-4 rounded-3xl btn-soft"
         >
           <img src="assets/opt-4.png" alt="" />
           <p>Get Bonus</p>
         </button>
 
-        <button
+        <button onclick="show('pay-bill')"
           class="btn flex flex-col h-full items-center py-4 rounded-3xl btn-soft"
         >
           <img src="assets/opt-5.png" alt="" />
           <p>Pay Bills</p>
         </button>
 
-        <button
+        <button onclick="show('transaction-history')"
           class="btn flex flex-col h-full items-center py-4 rounded-3xl btn-soft"
         >
           <img src="assets/opt-6.png" alt="" />
@@ -120,7 +120,7 @@
       </div>
     </section>
 
-    <section id="add-money" class="w-11/12 mx-auto py-5">
+    <section id="add-money" class="w-11/12 mx-auto py-5 hidden">
       <h2 class="font-bold text-2xl mb-5">Add Money</h2>
       <div class="card bg-base-100 w-full shadow-xl rounded-2xl mx-auto">
         <div class="card-body">
@@ -230,7 +230,72 @@
       </div>
     </section>
 
+
+      <!-- pay Bill section-->
+    <section id="pay-bill" class="cashout bg-base-200 w-11/12 mx-auto py-5 hidden">
+        <div class="w-11/12 py-4 pl-6">
+            <h2 class=" text-neutral font-bold text-2xl ">Select To Pay</h2>
+        </div>
+
+        <div class="card w-11/12 bg-base-100  rounded-2xl mx-auto shadow-2xl">
+            <div class="card-body ">
+                <fieldset class="fieldset">
+
+                    <label class="label text-neutral/50 font-semibold">Select A Bank</label>
+                    <select id="pay-bill-bank" class="select input rounded-full bg-base-200 w-full mb-4 ">
+                        <option disabled selected>Select bank</option>
+                        <option value="SBI">SBI</option>
+                        <option value="PNB">PNB</option>
+                        <option value="HDFC">HDFC</option>
+                    </select>
+
+                    <label class="label text-neutral/50 font-semibold">Biller Account Number</label>
+                    <input id="pay-bill-number" type="number" inputmode="numeric"
+                        class="input rounded-full bg-base-200 w-full mb-4" required
+                        placeholder="Enter 11 digit account number"/>
+
+                    <label class="label text-neutral/50 font-semibold">Amount to Pay</label>
+                    <input id="pay-bill-amount" type="number" required
+                        class="input input-bordered rounded-full bg-base-200 focus:ring-0 focus:border-primary w-full mb-4"
+                        placeholder="Add Amount to pay" />
+
+                    <label class="label text-neutral/50 font-semibold">Pin Number</label>
+                    <input id="pay-bill-pin" type="password" maxlength="4" minlength="4" required
+                        class="input input-bordered rounded-full bg-base-200 focus:ring-0 focus:border-primary w-full mb-4"
+                        placeholder="Enter 4 digit pin number" />
+
+                    <button id="pay-bill-btn"
+                        class="btn btn-neutral mt-4 rounded-full bg-primary shadow-none text-white text-[1.25rem] font-semibold ">Pay
+                        Now</button>
+                </fieldset>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section id="transaction-history" class="w-11/12 mx-auto py-5 space-y-5 hidden">
+      <h2 class="text-xl font-bold mb-5">Transaction History</h2>
+
+      <div id="history-container" class=" ">
+
+        <div class="transaction-card p-5 bg-base-100">
+
+
+
+        </div>
+
+      </div>
+    </section>
+
+
     <script src="script/addmoney.js"></script>
+
+    <script src="script/pay.js"></script>
 
     <script src="script/common.js"></script>
 

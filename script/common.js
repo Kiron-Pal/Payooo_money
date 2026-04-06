@@ -18,3 +18,22 @@
    const balanceElement = document.getElementById("balance");
    balanceElement.innerText = value;
  }
+
+ function show(id){
+  
+   const addmoney = document.getElementById('add-money');
+   const cashout = document.getElementById('cashout');
+   const transaction = document.getElementById('transaction-history');
+   const paybill = document.getElementById('pay-bill');
+
+   addmoney.classList.add('hidden');
+   cashout.classList.add('hidden');
+   transaction.classList.add('hidden');
+   paybill.classList.add('hidden');
+
+    const element = document.getElementById(id);
+    element.classList.remove('hidden');
+
+   
+   
+ }

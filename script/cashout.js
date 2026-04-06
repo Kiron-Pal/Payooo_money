@@ -38,6 +38,23 @@ document.getElementById("cashout-btn").addEventListener("click", function() {
         alert("Cashout Done");
           console.log(newBlance);
            setbalance(newBlance);
+
+            const history = document.getElementById("history-container");
+
+    const newhistory = document.createElement("div");
+
+    newhistory.innerHTML = `
+     <div class="transaction-card p-5 bg-base-100">
+    money cashed ${cashoutAmount}TK out successfully to ${cashoutNumber}
+     at ${new Date()}
+          
+
+        </div>
+
+    `
+
+
+    history.appendChild(newhistory);
         
     } else {
         alert("wrong Pin");
