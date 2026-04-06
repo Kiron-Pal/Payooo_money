@@ -23,13 +23,17 @@
   
    const addmoney = document.getElementById('add-money');
    const cashout = document.getElementById('cashout');
-   const transaction = document.getElementById('transaction-history');
-   const paybill = document.getElementById('pay-bill');
+  const paybill = document.getElementById('pay-bill');
+    const history = document.getElementById('transaction-history');
+   const sendmoney = document.getElementById('send-money');
+   const bonus = document.getElementById('get-bonus');
 
    addmoney.classList.add('hidden');
    cashout.classList.add('hidden');
-   transaction.classList.add('hidden');
-   paybill.classList.add('hidden');
+    paybill.classList.add('hidden');
+    history.classList.add('hidden');
+   sendmoney.classList.add('hidden');
+    bonus.classList.add('hidden');
 
     const element = document.getElementById(id);
     element.classList.remove('hidden');

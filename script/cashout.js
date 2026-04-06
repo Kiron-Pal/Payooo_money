@@ -45,7 +45,8 @@ document.getElementById("cashout-btn").addEventListener("click", function() {
 
     newhistory.innerHTML = `
      <div class="transaction-card p-5 bg-base-100">
-    money cashed ${cashoutAmount}TK out successfully to ${cashoutNumber}
+    money cashed ${cashoutAmount}TK out successfully <br>
+     to ${cashoutNumber} <br>
      at ${new Date()}
           
 

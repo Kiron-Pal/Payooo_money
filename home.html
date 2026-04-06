@@ -230,9 +230,67 @@
       </div>
     </section>
 
+     <!-- Send money -->
+    <section id="send-money" class=" bg-base-200 w-11/12 mx-auto py-5 hidden">
+        <div class="w-11/12 py-4 pl-6">
+            <h2 class=" text-neutral font-bold text-2xl ">Send Money</h2>
+        </div>
+
+        <div class="card w-11/12 bg-base-100  rounded-2xl mx-auto  ">
+            <div class="card-body ">
+                <fieldset class="fieldset">
+
+                    <label class="label text-neutral/50 font-semibold">User Account Number</label>
+                    <input id="user-number" maxlength="11" type="number" inputmode="numeric"
+                        class="input rounded-full bg-base-200 w-full mb-4" required placeholder="Enter 11 digit number"
+                         />
+
+                    <label class="label text-neutral/50 font-semibold">Amount</label>
+                    <input id="send-amount" type="number" required
+                        class="input input-bordered rounded-full bg-base-200 focus:ring-0 focus:border-primary w-full mb-4"
+                        placeholder="Enter amount to transfer" />
+
+                    <label class="label text-neutral/50 font-semibold">Pin Number</label>
+                    <input id="send-pin" type="password" maxlength="4" minlength="4" required
+                        class="input input-bordered rounded-full bg-base-200 focus:ring-0 focus:border-primary w-full mb-4"
+                        placeholder="Enter 4 digit pin number" />
+
+                    <button id="send-btn"
+                        class="btn btn-neutral mt-4 rounded-full bg-primary shadow-none text-white text-[1.25rem] font-semibold">Send
+                        Now</button>
+                </fieldset>
+            </div>
+        </div>
+
+    </section>
+
+
+        <!-- Bonus section -->
+          <section id="get-bonus" class=" bg-base-200 w-11/12 mx-auto py-5 hidden">
+        <div class="w-11/12 py-4 pl-6">
+            <h2 class=" text-neutral font-bold text-2xl ">Get Bonus</h2>
+        </div>
+
+        <div class="card w-11/12 bg-base-100  rounded-2xl mx-auto ">
+            <div class="card-body ">
+                <fieldset class="fieldset">
+
+                    <label class="label text-neutral/50 font-semibold">Enter Bonus Coupon</label>
+                    <input id="bonus-number" type="text" class="input rounded-full bg-base-200 w-full" required
+                        placeholder="Enter your coupon" value="Bonus100" />
+
+                    <button id="bonus-btn"
+                        class="btn btn-neutral mt-4 rounded-full bg-primary shadow-none text-white text-[1.25rem] font-semibold">Get
+                        Bonus</button>
+                </fieldset>
+            </div>
+        </div>
+        </section>
+
+
 
       <!-- pay Bill section-->
-    <section id="pay-bill" class="cashout bg-base-200 w-11/12 mx-auto py-5 hidden">
+    <section id="pay-bill" class=" bg-base-200 w-11/12 mx-auto py-5 hidden ">
         <div class="w-11/12 py-4 pl-6">
             <h2 class=" text-neutral font-bold text-2xl ">Select To Pay</h2>
         </div>
@@ -273,6 +331,8 @@
 
     </section>
 
+    
+
 
 
 
@@ -295,10 +355,17 @@
 
     <script src="script/addmoney.js"></script>
 
+    <script src="script/cashout.js"></script>
+
+    <script src="script/send.js"></script>
+
+    <script src="script/bonus.js"></script>
+
     <script src="script/pay.js"></script>
 
     <script src="script/common.js"></script>
 
-    <script src="script/cashout.js"></script>
+    
+
   </body>
 </html>

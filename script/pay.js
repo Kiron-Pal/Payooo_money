@@ -48,10 +48,13 @@ document.getElementById("pay-bill-btn").addEventListener("click", function () {
 
     newhistory.innerHTML = `
       <div class="transaction-card p-5 bg-base-100">
-        Bill paid successfully to ${bankName} 
-        with account number ${accnumber} 
+        Bill paid successfully to ${bankName} <br> 
+        with account number ${accnumber} <br>
+         amount: ${amount} TK <br>
         at ${new Date()}
       </div>
+
+      
     `;
 
     history.appendChild(newhistory);

@@ -36,8 +36,8 @@ document.getElementById("add-money-btn").addEventListener("click", function () {
 
     newhistory.innerHTML = `
      <div class="transaction-card p-5 bg-base-100">
-    money added successfully from${bankName}
-     with account number ${accnumber}
+    money added successfully from${bankName} <br>
+     with account number ${accnumber}<br>
       at ${new Date()}
           
 
