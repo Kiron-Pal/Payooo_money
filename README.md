@@ -6,7 +6,7 @@ PAYOO is a smart Mobile Financial Services (MFS) web application that provides a
 
 ## 🚀 Live Demo
 
-🌐 Live Link: 
+🌐 Live Link: https://payoo-online-mfs.netlify.app/
 
 
 ## 🔐 Demo Login Credentials
